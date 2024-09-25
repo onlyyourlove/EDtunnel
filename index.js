@@ -1286,24 +1286,24 @@ function getConfig(userIDs, hostName) {
     <div class="container">
       <h1>EDtunnel: Protocol Configuration</h1>
       <img src="https://ipfs.io/ipfs/bafybeigd6i5aavwpr6wvnwuyayklq3omonggta4x2q7kpmgafj357nkcky" alt="EDtunnel Logo" class="logo">
-      <p>Welcome! This function generates configuration for the vless protocol. If you found this useful, please check our GitHub project:</p>
+      <p>欢迎！此功能为 vless 协议生成配置。如果您发现这有用，请查看我们的 GitHub 项目：</p>
       <p><a href="https://github.com/6Kmfi6HP/EDtunnel" target="_blank" style="color: #00ff00;">EDtunnel - https://github.com/6Kmfi6HP/EDtunnel</a></p>
       <div style="clear: both;"></div>
       <div class="btn-group">
-        <a href="//${hostName}/sub/${userIDArray[0]}" class="btn" target="_blank"><i class="fas fa-link"></i> VLESS Subscription</a>
-        <a href="clash://install-config?url=${encodeURIComponent(`https://${hostName}/sub/${userIDArray[0]}?format=clash`)}" class="btn" target="_blank"><i class="fas fa-bolt"></i> Clash Subscription</a>
-        <a href="${clash_link}" class="btn" target="_blank"><i class="fas fa-bolt"></i> Clash Link</a>
-        <a href="${subbestip}" class="btn" target="_blank"><i class="fas fa-star"></i> Best IP Subscription</a>
+        <a href="//${hostName}/sub/${userIDArray[0]}" class="btn" target="_blank"><i class="fas fa-link"></i> VLESS 订阅</a>
+        <a href="clash://install-config?url=${encodeURIComponent(`https://${hostName}/sub/${userIDArray[0]}?format=clash`)}" class="btn" target="_blank"><i class="fas fa-bolt"></i> Clash 订阅</a>
+        <a href="${clash_link}" class="btn" target="_blank"><i class="fas fa-bolt"></i> Clash 链接</a>
+        <a href="${subbestip}" class="btn" target="_blank"><i class="fas fa-star"></i> 优选 IP 订阅</a>
       </div>
       <div class="subscription-info">
-        <h3>Options Explained:</h3>
+        <h3>选项说明：</h3>
         <ul>
-          <li><strong>VLESS Subscription:</strong> Direct link for VLESS protocol configuration. Suitable for clients supporting VLESS.</li>
-          <li><strong>Clash Subscription:</strong> Opens the Clash client with pre-configured settings. Best for Clash users on mobile devices.</li>
-          <li><strong>Clash Link:</strong> A web link to convert the VLESS config to Clash format. Useful for manual import or troubleshooting.</li>
-          <li><strong>Best IP Subscription:</strong> Provides a curated list of optimal server IPs for many <b>different countries</b>.</li>
+          <li><strong>VLESS 订阅：</strong>  VLESS 协议配置的直接链接。适用于支持 VLESS 的客户端。</li>
+          <li><strong>Clash 订阅：</strong> 使用预配置设置打开 Clash 客户端。最适合移动设备上的 Clash 用户。</li>
+          <li><strong>Clash 链接：</strong> 将 VLESS 配置转换为 Clash 格式的网络链接。适用于手动导入或故障排除。</li>
+          <li><strong>优选IP订阅：</strong> 提供针对许多不同国家的精选最佳服务器 IP 列表。 <b>different countries</b>.</li>
         </ul>
-        <p>Choose the option that best fits your client and needs. For most users, the VLESS or Clash Subscription will be the easiest to use.</p>
+        <p>选择最适合您的客户和需求的选项。对于大多数用户来说，VLESS 或 Clash 订阅是最容易使用的。</p>
       </div>
     </div>
   `;
@@ -1314,16 +1314,16 @@ function getConfig(userIDs, hostName) {
 		return `
       <div class="container config-item">
         <h2>UUID: ${userID}</h2>
-        <h3>Default IP Configuration</h3>
+        <h3>默认 IP 配置</h3>
         <div class="code-container">
           <pre><code>${protocolMain}</code></pre>
-          <button class="btn copy-btn" onclick='copyToClipboard("${protocolMain}")'><i class="fas fa-copy"></i> Copy</button>
+          <button class="btn copy-btn" onclick='copyToClipboard("${protocolMain}")'><i class="fas fa-copy"></i> 复制</button>
         </div>
         
-        <h3>Best IP Configuration</h3>
+        <h3>优先 IP 配置</h3>
         <div class="code-container">
           <pre><code>${protocolSec}</code></pre>
-          <button class="btn copy-btn" onclick='copyToClipboard("${protocolSec}")'><i class="fas fa-copy"></i> Copy</button>
+          <button class="btn copy-btn" onclick='copyToClipboard("${protocolSec}")'><i class="fas fa-copy"></i> 复制</button>
         </div>
       </div>
     `;
