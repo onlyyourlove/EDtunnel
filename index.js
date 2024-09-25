@@ -1284,7 +1284,7 @@ function getConfig(userIDs, hostName) {
 
 	const header = `
     <div class="container">
-      <h1>EDtunnel: Protocol Configuration</h1>
+      <h1>EDtunnel: 配置</h1>
       <img src="https://ipfs.io/ipfs/bafybeigd6i5aavwpr6wvnwuyayklq3omonggta4x2q7kpmgafj357nkcky" alt="EDtunnel Logo" class="logo">
       <p>欢迎！此功能为 vless 协议生成配置。如果您发现这有用，请查看我们的 GitHub 项目：</p>
       <p><a href="https://github.com/6Kmfi6HP/EDtunnel" target="_blank" style="color: #00ff00;">EDtunnel - https://github.com/6Kmfi6HP/EDtunnel</a></p>
